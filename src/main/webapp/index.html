@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  <h2>Student Registration Form</h2>
+    <form action="submitform" method="post">
+      <label for="stud_id">Student ID *</label>
+      <input type="number" id="stud_id" name="stud_id" required><br><br>
+      
+
+      <label for="stud_name">Full Name *</label>
+      <input type="text" id="stud_name" name="stud_name" maxlength="60" required><br><br>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender">
+        <option value="">--Select Gender--</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select><br><br>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="1"><br><br>
+
+      <label for="mobile_no">Mobile Number</label>
+      <input type="tel" id="mobile_no" name="mobile_no" pattern="[0-9]{10}" placeholder="Enter 10-digit number"><br><br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" maxlength="30"><br><br>
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" maxlength="60"><br><br>
+
+      <label for="state">State</label>
+      <input type="text" id="state" name="state" maxlength="70"><br><br>
+
+      <label for="pincode">Pincode</label>
+      <input type="text" id="pincode" name="pincode" maxlength="10"><br><br>
+
+      <label for="clg_name">College Name</label>
+      <input type="text" id="clg_name" name="clg_name" maxlength="100"><br><br>
+
+      <label for="branch">Branch</label>
+      <input type="text" id="branch" name="branch" maxlength="60"><br><br>
+
+      <label for="course">Course</label>
+      <input type="text" id="course" name="course" maxlength="60"><br><br>
+
+      <label for="marks">Marks</label>
+      <input type="number" id="marks" name="marks" min="0" max="100"><br><br>
+
+      <label for="driving_licence">Driving Licence</label>
+      <input type="number" id="driving_licence" name="driving_licence"><br><br>
+
+      <button type="submit">Register</button>
+    </form>
+</body>
+</html>
